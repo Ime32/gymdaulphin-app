@@ -1,16 +1,45 @@
-# React + Vite
+# 🐬 GymDaulphin — Modern E-Commerce Fitness Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, responsive e-commerce web application built for fitness enthusiasts. **GymDaulphin** features a dark-themed slate/cyan aesthetic with glassmorphism UI elements, dynamic product filtering, live search, an integrated Redux Toolkit cart with `localStorage` persistence, and a free shipping progress indicator.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo & Features
 
-## React Compiler
+- **🛒 Centralized State Management:** Built using Redux Toolkit to handle global cart interactions seamlessly.
+- **💾 LocalStorage Persistence:** Cart state automatically saves and reloads across page sessions.
+- **🔍 Live Search & Filter:** Instantly query products by keywords or filter by categories (Apparel, Gear, Supplements).
+- **🚚 Free Shipping Progress Tracker:** Visual progress indicator inside the cart drawer notifying users when they unlock free shipping ($75 threshold).
+- **🔔 Toast Notifications:** Real-time feedback alerts when items are added to the cart.
+- **📱 Fully Responsive Design:** Sleek, modern grid layout optimized for mobile, tablet, and desktop viewports.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** [React 18](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **State Management:** [Redux Toolkit](https://redux-toolkit.js.org/) & [React-Redux](https://react-redux.js.org/)
+- **Styling:** Custom CSS3 with Flexbox, CSS Grid, Glassmorphism, and CSS Variables
+- **Icons & Imagery:** Unsplash curated high-resolution photography
+
+---
+
+## 📁 Project Structure
+
+```text
+gymdaulphin-app/
+├── public/
+│   └── favicon.ico
+├── src/
+│   ├── redux/
+│   │   ├── cartSlice.js    # Redux cart state, reducers & localStorage sync
+│   │   └── store.js        # Redux store configuration
+│   ├── App.css             # Main styling rules, glassmorphism & layouts
+│   ├── App.jsx             # Core application component & UI layout
+│   ├── index.css           # Global CSS resets & typography
+│   └── main.jsx            # Application entry point with Redux Provider
+├── .gitignore
+├── package.json
+├── README.md
+└── vite.config.js
